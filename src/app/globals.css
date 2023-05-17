@@ -105,3 +105,8 @@ a {
     color-scheme: dark;
   }
 }
+
+ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
