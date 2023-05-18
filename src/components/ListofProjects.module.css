@@ -3,4 +3,10 @@
     font-weight: 700;
     color: black;
   }
+
+.ListofProjects p {
+  font-family: sans-serif;
+  font-weight: 200;
+  color: black
+}
   

@@ -12,7 +12,8 @@ export default (props) => {
                     <div>
                         <Card>
                         <ListofProjects>{person.Metaprojects} {person.Title}</ListofProjects>
-                        <ListofProjects>{person.TwoThreeSentenceDescription}</ListofProjects>
+                        <p>{person.TwoThreeSentenceDescription}</p>
+                        <h2>{person.Metaprojects}</h2>
                         </Card>
                     </div>
                 )
