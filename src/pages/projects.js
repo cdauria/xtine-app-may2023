@@ -1,6 +1,7 @@
 import getAirtableData from "@/utilities/get-airtable-data"
 import ListofProjects from "@/components/ListofProjects"
 import NeonBox from "@/components/NeonBox"
+import Card from "@/components/Card"
 
 
 export default (props) => {
@@ -9,10 +10,10 @@ export default (props) => {
             {props.data.map(person=>{
                 return (
                     <div>
-                        <NeonBox>
+                        <Card>
                         <ListofProjects>{person.Metaprojects} {person.Title}</ListofProjects>
-                        <p>{person.TwoThreeSentenceDescription}</p>
-                        </NeonBox>
+                        <ListofProjects>{person.TwoThreeSentenceDescription}</ListofProjects>
+                        </Card>
                     </div>
                 )
             })}

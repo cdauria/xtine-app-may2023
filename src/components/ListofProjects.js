@@ -1,9 +1,19 @@
-import styles from '../components/ListofProjects.module.css'
+/*import styles from '../components/ListofProjects.module.css'
 
 const ListofProjects = (props) => {
     return (
-            <h1 className={styles.ListofProjects}>{props.children}</h1>
+            <className={styles.ListofProjects}>{props.children}
     )
 }
 
-export default ListofProjects
+export default ListofProjects*/
+
+import styles from '../components/ListofProjects.module.css';
+
+const ListofProjects = (props) => {
+  return (
+    <div className={styles.ListofProjects}>{props.children}</div>
+  );
+};
+
+export default ListofProjects;
