@@ -1,0 +1,13 @@
+.CardContent {
+    opacity: .5;
+    transition: opacity 0.3 ease; 
+    transform: translate (-50%, -50%);
+    text-align: center-justify;
+    max-height: 100%;
+    overflow: auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    flex: 1;
+  }
