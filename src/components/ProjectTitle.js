@@ -1,9 +1,19 @@
-import styles from '../components/ProjectTitle.module.css'
+/*import styles from '../components/ListofProjects.module.css'
+
+const ListofProjects = (props) => {
+    return (
+            <className={styles.ListofProjects}>{props.children}
+    )
+}
+
+export default ListofProjects*/
+
+import styles from '../components/ProjectTitle.module.css';
 
 const ProjectTitle = (props) => {
-    return (
-        <h1 className={styles.ProjectTitle}>{props.name}</h1>
-    )
-    }
+  return (
+    <div className={styles.ProjectTitle}>{props.children}</div>
+  );
+};
 
-export default ProjectTitle
+export default ProjectTitle;

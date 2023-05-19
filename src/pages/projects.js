@@ -1,7 +1,9 @@
 import getAirtableData from "@/utilities/get-airtable-data"
-import ListofProjects from "@/components/ListofProjects"
+import ListofProjects from "@/components/ProjectTitle"
 import NeonBox from "@/components/NeonBox"
 import Card from "@/components/Card"
+import ProjectTitle from "@/components/ProjectTitle"
+import ProjectDescription from "@/components/ProjectDescription"
 
 
 export default (props) => {
@@ -11,17 +13,17 @@ export default (props) => {
                 return (
                     <div>
                         <Card>
-                        <ListofProjects>{person.Metaprojects} {person.Title}</ListofProjects>
-                        <p>{person.TwoThreeSentenceDescription}</p>
-                        <h2>{person.Metaprojects}</h2>
+                        <ProjectTitle>{person.Metaprojects} {person.Title}</ProjectTitle>
+                        <ProjectDescription>{person.TwoThreeSentenceDescription}</ProjectDescription>
                         </Card>
-                    </div>
+                     </div>
                 )
             })}
             <pre>{JSON.stringify(props, null, 4)}</pre>
         </div>
     )
 }
+
 
   export async function getServerSideProps(context) {
     console.log("getting serverside props")

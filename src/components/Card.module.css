@@ -1,8 +1,11 @@
 .Card {
-    background-color: #ff9307;
-    border-radius: 20px;
-    border-color: #ff9307;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
+  background-color: rgb(220, 19, 103);
+  border-radius: 50px;
+  padding: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  box-shadow: 0 0 10px rgb(198, 165, 234);
+}
+
